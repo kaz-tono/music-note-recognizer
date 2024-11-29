@@ -13,11 +13,11 @@ def edge_detection(img):
     return edge
 
 if __name__ == '__main__':
-    img = cv2.imread('resources/sample01.jpg')
+    img = cv2.imread('resources/sample01.png')
     edge = edge_detection(img)
     cv2.imshow('edge', edge)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-    cv2.imwrite('edge.jpg', edge)
+    cv2.imwrite('results/edge.jpg', edge)
     plt.imshow(edge, cmap='gray')
     plt.show()
